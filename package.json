@@ -1,15 +1,31 @@
 {
-  "name": "stroybook-icon",
+  "name": "storybook-icon",
   "displayName": "Storybook Icon",
-  "version": "1.0.0",
+  "icon": "icons/icon.png",
+  "publisher": "KarimAmouri",
+  "version": "1.1.0",
   "description": "a VS code extension that changes icon for storybook files",
-  "categories": ["Themes"],
+  "categories": [
+    "Other"
+  ],
+  "scripts": {
+    "build": "vsce package"
+  },
   "contributes": {
-    "iconThemes": [
+    "languages": [
       {
-        "id": "storybook-icons",
-        "label": "Storybook Icons",
-        "path": "./storybook-icon-theme.json"
+        "id": "stories",
+        "aliases": [
+          "Stories"
+        ],
+        "extensions": [
+          ".stories.ts",
+          ".stories.js"
+        ],
+        "icon": {
+          "light": "./icons/icon.svg",
+          "dark": "./icons/icon.svg"
+        }
       }
     ]
   },
