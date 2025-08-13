@@ -1,0 +1,11 @@
+{
+  "iconDefinitions": {
+    "_stories": {
+      "iconPath": "./icons/icon.svg"
+    }
+  },
+  "fileExtensions": {
+    "stories.ts": "_stories",
+    "stories.js": "_stories"
+  }
+}

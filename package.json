@@ -1,0 +1,21 @@
+{
+  "name": "stroybook-icon",
+  "displayName": "Storybook Icon",
+  "version": "1.0.0",
+  "description": "a VS code extension that changes icon for storybook files",
+  "categories": ["Themes"],
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "storybook-icons",
+        "label": "Storybook Icons",
+        "path": "./storybook-icon-theme.json"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "author": "Karim Amouri",
+  "license": "MIT"
+}
