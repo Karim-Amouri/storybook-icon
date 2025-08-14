@@ -3,7 +3,7 @@
   "displayName": "Storybook Icon",
   "icon": "icons/icon.png",
   "publisher": "KarimAmouri",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "a VS code extension that changes icon for storybook files",
   "categories": [
     "Other"
@@ -14,18 +14,48 @@
   "contributes": {
     "languages": [
       {
-        "id": "stories",
+        "id": "stories-ts",
         "aliases": [
-          "Stories"
+          "Stories TS"
         ],
         "extensions": [
-          ".stories.ts",
+          ".stories.ts"
+        ],
+        "icon": {
+          "light": "./icons/icon.svg",
+          "dark": "./icons/icon.svg"
+        },
+        "mimetypes": [
+          "text/typescript"
+        ]
+      },
+      {
+        "id": "stories-js",
+        "aliases": [
+          "Stories JS"
+        ],
+        "extensions": [
           ".stories.js"
         ],
         "icon": {
           "light": "./icons/icon.svg",
           "dark": "./icons/icon.svg"
-        }
+        },
+        "mimetypes": [
+          "text/javascript"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "stories-ts",
+        "scopeName": "source.ts",
+        "path": "./syntaxes/TypeScript.tmLanguage.json"
+      },
+      {
+        "language": "stories-js",
+        "scopeName": "source.js",
+        "path": "./syntaxes/JavaScript.tmLanguage.json"
       }
     ]
   },
